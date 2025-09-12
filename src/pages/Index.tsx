@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Clock, Users, Award, Shield, Target } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { CheckCircle, Clock, Users, Award, Shield, Target, Phone, Mail, Play } from "lucide-react";
 import heroImage from "@/assets/cyber-hero-bg.jpg";
 import trainerImage from "@/assets/trainer-shivam.jpg";
 
@@ -15,22 +16,52 @@ const Index = () => {
           style={{ backgroundImage: `url(${heroImage})` }}
         />
         <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-secondary text-secondary-foreground cyber-glow-green">
-              🔥 Limited Time Offer - Only ₹99
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-cyber bg-clip-text text-transparent">
-              Learn to Hack Ethically & Build a 6-Figure Cybersecurity Career 🚀
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              3-Hour Live Masterclass by India's Top Bug Bounty Hunter – Learn real-world hacking skills for just ₹99 (instead of ₹999).
-            </p>
-            <Button variant="hero" size="xl" className="mb-6">
-              🔥 Reserve My Spot for ₹99
-            </Button>
-            <div className="flex items-center justify-center gap-4 text-secondary">
-              <CheckCircle className="h-5 w-5" />
-              <span className="font-semibold">Certificate + 3 Job Calls Guaranteed</span>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Hero Content */}
+            <div className="text-center lg:text-left">
+              <Badge className="mb-6 bg-secondary text-secondary-foreground cyber-glow-green">
+                🔥 Limited Time Offer - Only ₹99
+              </Badge>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-cyber bg-clip-text text-transparent">
+                Learn to Hack Ethically & Build a 6-Figure Cybersecurity Career 🚀
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                3-Hour Live Masterclass by India's Top Bug Bounty Hunter – Learn real-world hacking skills for just ₹99 (instead of ₹999).
+              </p>
+              <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="xl" className="mb-6">
+                  🔥 Reserve My Spot for ₹99
+                </Button>
+              </a>
+              <div className="flex items-center justify-center lg:justify-start gap-4 text-secondary">
+                <CheckCircle className="h-5 w-5" />
+                <span className="font-semibold">Certificate + 3 Job Calls Guaranteed</span>
+              </div>
+            </div>
+            
+            {/* Video Section */}
+            <div className="relative">
+              <Card className="p-2 border-2 border-primary cyber-glow">
+                <div className="relative bg-muted rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                  {/* Demo Video Placeholder */}
+                  <div className="absolute inset-0 bg-gradient-cyber-dark flex items-center justify-center">
+                    <div className="text-center">
+                      <Play className="h-16 w-16 text-primary mx-auto mb-4 cyber-pulse" />
+                      <p className="text-lg font-semibold">Watch Workshop Preview</p>
+                      <p className="text-sm text-muted-foreground">Click to see what you'll learn</p>
+                    </div>
+                  </div>
+                  {/* YouTube embed will go here */}
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Ethical Hacking Workshop Preview"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </Card>
             </div>
           </div>
         </div>
@@ -75,10 +106,106 @@ const Index = () => {
                 <span className="text-6xl font-bold text-secondary ml-4">₹99</span>
               </div>
               <p className="text-xl mb-8">Worth ₹999, yours at just ₹99 for a limited time!</p>
-              <Button variant="secondary" size="xl">
-                👉 Book My Seat Now for ₹99
-              </Button>
+              <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
+                <Button variant="secondary" size="xl">
+                  👉 Book My Seat Now for ₹99
+                </Button>
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Course Content Section */}
+      <section className="py-20 px-4 bg-card">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Complete Course Breakdown</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Dive deep into each module and discover what makes this workshop so valuable
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="intro-hacking" className="border-2 border-muted rounded-lg px-6">
+                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+                  🔐 Introduction to Ethical Hacking
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                  <p>• Understanding the fundamentals of cybersecurity and ethical hacking</p>
+                  <p>• Legal framework and responsible disclosure practices</p>
+                  <p>• Setting up your hacking environment and essential tools</p>
+                  <p>• Types of vulnerabilities and attack vectors</p>
+                  <p>• How to think like a security professional</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="web-hacking" className="border-2 border-muted rounded-lg px-6">
+                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+                  🌐 Web App Hacking
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                  <p>• OWASP Top 10 vulnerabilities explained</p>
+                  <p>• SQL Injection, XSS, and CSRF attacks</p>
+                  <p>• Authentication and session management flaws</p>
+                  <p>• Directory traversal and file inclusion attacks</p>
+                  <p>• Live demonstration on real-world applications</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="mobile-hacking" className="border-2 border-muted rounded-lg px-6">
+                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+                  📱 Mobile App Hacking
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                  <p>• Android and iOS application security testing</p>
+                  <p>• Reverse engineering mobile applications</p>
+                  <p>• API security testing for mobile backends</p>
+                  <p>• Static and dynamic analysis techniques</p>
+                  <p>• Common mobile vulnerabilities and exploits</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="social-hacking" className="border-2 border-muted rounded-lg px-6">
+                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+                  👥 Social Media Hacking
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                  <p>• Social engineering techniques and psychology</p>
+                  <p>• OSINT (Open Source Intelligence) gathering</p>
+                  <p>• Social media platform vulnerabilities</p>
+                  <p>• Phishing and pretexting strategies</p>
+                  <p>• Protecting against social engineering attacks</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="freelancing" className="border-2 border-muted rounded-lg px-6">
+                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+                  💰 Freelancing in Cybersecurity
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                  <p>• Setting up your bug bounty hunting profile</p>
+                  <p>• Best platforms: HackerOne, Bugcrowd, Synack</p>
+                  <p>• Writing effective vulnerability reports</p>
+                  <p>• Pricing your services and negotiating rates</p>
+                  <p>• Building long-term client relationships</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="career-growth" className="border-2 border-muted rounded-lg px-6">
+                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+                  🚀 Career & Salary Growth in Cybersecurity
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                  <p>• Complete career roadmap from beginner to expert</p>
+                  <p>• Salary expectations: ₹3L to ₹50L+ progression</p>
+                  <p>• Essential certifications: CEH, CISSP, OSCP</p>
+                  <p>• Building a professional network in cybersecurity</p>
+                  <p>• Interview preparation and portfolio building</p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
@@ -179,9 +306,11 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="cyberOutline" size="xl">
-              👉 Book My Seat Now for ₹99
-            </Button>
+            <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
+              <Button variant="cyberOutline" size="xl">
+                👉 Book My Seat Now for ₹99
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -243,9 +372,11 @@ const Index = () => {
             <p className="text-xl text-primary mb-8 cyber-pulse">
               "Offer valid only for first 100 students – Don't miss out!"
             </p>
-            <Button variant="hero" size="xl" className="mb-4">
-              🔥 Join the Workshop for ₹99
-            </Button>
+            <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl" className="mb-4">
+                🔥 Join the Workshop for ₹99
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -269,18 +400,41 @@ const Index = () => {
                 <span>3 Job Calls</span>
               </div>
             </div>
-            <Button variant="hero" size="xl" className="text-xl px-16">
-              👉 Yes! I want to become a Cybersecurity Pro 🚀 – Book Now for ₹99
-            </Button>
+            <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl" className="text-xl px-16">
+                👉 Yes! I want to become a Cybersecurity Pro 🚀 – Book Now for ₹99
+              </Button>
+            </a>
+            
+            {/* Contact Information */}
+            <div className="mt-12 pt-8 border-t border-muted">
+              <p className="text-lg mb-4">Have questions? Get in touch:</p>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                <div className="flex items-center gap-2">
+                  <Phone className="h-5 w-5 text-secondary" />
+                  <a href="tel:8087203095" className="text-lg hover:text-primary transition-cyber">
+                    8087203095
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-secondary" />
+                  <a href="mailto:sales@ashpranix.com" className="text-lg hover:text-primary transition-cyber">
+                    sales@ashpranix.com
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Sticky CTA */}
       <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
-        <Button variant="hero" className="w-full" size="lg">
-          🔥 Book Now for ₹99
-        </Button>
+        <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer" className="block">
+          <Button variant="hero" className="w-full" size="lg">
+            🔥 Book Now for ₹99
+          </Button>
+        </a>
       </div>
     </div>
   );
