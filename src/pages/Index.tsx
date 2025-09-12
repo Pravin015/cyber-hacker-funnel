@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -5,8 +6,41 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Users, Award, Shield, Target, Phone, Mail, Play } from "lucide-react";
 import heroImage from "@/assets/cyber-hero-bg.jpg";
 import trainerImage from "@/assets/trainer-shivam.jpg";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 
 const Index = () => {
+  const [showExitPopup, setShowExitPopup] = useState(false);
+  const [hasShownPopup, setHasShownPopup] = useState(false);
+
+  useEffect(() => {
+    // Show popup after 15 seconds
+    const timer = setTimeout(() => {
+      if (!hasShownPopup) {
+        setShowExitPopup(true);
+        setHasShownPopup(true);
+      }
+    }, 15000);
+
+    // Exit intent detection
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 0 && !hasShownPopup) {
+        setShowExitPopup(true);
+        setHasShownPopup(true);
+      }
+    };
+
+    document.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, [hasShownPopup]);
+
+  const handleClosePopup = () => {
+    setShowExitPopup(false);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-hero">
       {/* Hero Section */}
@@ -437,6 +471,9 @@ const Index = () => {
           </Button>
         </a>
       </div>
+
+      {/* Exit Intent Popup */}
+      <ExitIntentPopup isVisible={showExitPopup} onClose={handleClosePopup} />
     </div>
   );
 };
