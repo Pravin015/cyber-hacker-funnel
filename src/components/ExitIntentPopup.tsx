@@ -37,10 +37,10 @@ export const ExitIntentPopup = ({ isVisible, onClose }: ExitIntentPopupProps) =>
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-4 right-4 z-10 text-white hover:bg-white/20 h-8 w-8"
+          className="absolute top-4 right-4 z-20 text-white hover:bg-white/20 bg-black/20 border border-white/30 h-8 w-8"
           onClick={onClose}
         >
-          <X className="h-4 w-4" />
+          <X className="h-4 w-4 stroke-2" />
         </Button>
 
         <div className="grid md:grid-cols-2 gap-0 min-h-[500px]">
@@ -176,20 +176,20 @@ export const ExitIntentPopup = ({ isVisible, onClose }: ExitIntentPopupProps) =>
                 <Label htmlFor="mobile" className="text-sm font-medium text-gray-700">
                   Mobile Number <span className="text-red-500">*</span>
                 </Label>
-                <div className="flex mt-1">
-                  <div className="flex items-center px-3 border border-r-0 border-gray-300 bg-gray-50 rounded-l-md">
-                    <span className="text-sm">🇮🇳 +91</span>
-                  </div>
-                  <Input
-                    id="mobile"
-                    type="tel"
-                    placeholder="Enter your mobile number"
-                    className="rounded-l-none border-gray-300 focus:border-blue-500"
-                    value={formData.mobileNumber}
-                    onChange={(e) => setFormData(prev => ({ ...prev, mobileNumber: e.target.value }))}
-                    required
-                  />
+              <div className="flex mt-1">
+                <div className="flex items-center px-3 border border-r-0 border-gray-300 bg-gray-50 rounded-l-md">
+                  <span className="text-sm font-medium">IN +91</span>
                 </div>
+                <Input
+                  id="mobile"
+                  type="tel"
+                  placeholder="Enter your mobile number"
+                  className="rounded-l-none border-gray-300 focus:border-blue-500"
+                  value={formData.mobileNumber}
+                  onChange={(e) => setFormData(prev => ({ ...prev, mobileNumber: e.target.value }))}
+                  required
+                />
+              </div>
                 <p className="text-xs text-gray-500 mt-1">
                   You'll receive an OTP on this number for verification
                 </p>

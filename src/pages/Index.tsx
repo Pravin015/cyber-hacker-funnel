@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Users, Award, Shield, Target, Phone, Mail, Play } from "lucide-react";
 import heroImage from "@/assets/cyber-hero-bg.jpg";
 import trainerImage from "@/assets/trainer-shivam.jpg";
+import cybersecurityBg from "@/assets/cybersecurity-bg.jpg";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 
 const Index = () => {
@@ -45,6 +46,10 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-hero">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-16 md:py-20">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20" 
+          style={{ backgroundImage: `url(${cybersecurityBg})` }}
+        />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10" 
           style={{ backgroundImage: `url(${heroImage})` }}
