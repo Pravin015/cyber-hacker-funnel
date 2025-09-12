@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-hero">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+      <section className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-16 md:py-20">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10" 
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -68,9 +68,9 @@ const Index = () => {
       </section>
 
       {/* About Workshop Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-16 md:py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">
               Introduction to Ethical Hacking & Cybersecurity Careers
             </h2>
@@ -117,9 +117,9 @@ const Index = () => {
       </section>
 
       {/* Detailed Course Content Section */}
-      <section className="py-20 px-4 bg-card">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-card">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">Complete Course Breakdown</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
               Dive deep into each module and discover what makes this workshop so valuable
@@ -211,9 +211,9 @@ const Index = () => {
       </section>
 
       {/* About Trainer Section */}
-      <section className="py-20 px-4 bg-card">
+      <section className="py-12 sm:py-16 md:py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">Meet Your Expert Trainer</h2>
           </div>
           
@@ -268,9 +268,9 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-card">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">What You Get</h2>
           </div>
           
@@ -305,7 +305,7 @@ const Index = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
               <Button variant="cyberOutline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                 👉 Book My Seat Now for ₹99
@@ -316,9 +316,9 @@ const Index = () => {
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-20 px-4 bg-card">
+      <section className="py-12 sm:py-16 md:py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">What Students Say</h2>
           </div>
           
@@ -361,7 +361,7 @@ const Index = () => {
       </section>
 
       {/* Urgency & Pricing Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-card">
         <div className="container mx-auto text-center">
           <div className="max-w-3xl mx-auto px-4 sm:px-0">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">Don't Miss Out!</h2>
@@ -382,7 +382,7 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 px-4 bg-gradient-cyber-dark">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-cyber-dark">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-0">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 px-2 sm:px-0">Ready to Start Your Cybersecurity Journey?</h2>
@@ -401,8 +401,9 @@ const Index = () => {
               </div>
             </div>
             <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="lg" className="text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-12 lg:px-16 w-full sm:w-auto">
-                👉 Yes! I want to become a Cybersecurity Pro 🚀 – Book Now for ₹99
+              <Button variant="hero" size="lg" className="text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-12 w-full sm:w-auto">
+                <span className="hidden sm:inline">👉 Yes! I want to become a Cybersecurity Pro 🚀 – Book Now for ₹99</span>
+                <span className="sm:hidden">🚀 Book Cybersecurity Pro for ₹99</span>
               </Button>
             </a>
             
