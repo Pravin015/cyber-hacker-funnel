@@ -8,6 +8,7 @@ import heroImage from "@/assets/cyber-hero-bg.jpg";
 import trainerImage from "@/assets/trainer-shivam.jpg";
 import cybersecurityBg from "@/assets/cybersecurity-bg.jpg";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
+import { StickyHeader } from "@/components/StickyHeader";
 
 const Index = () => {
   const [showExitPopup, setShowExitPopup] = useState(false);
@@ -44,8 +45,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-hero">
+      {/* Sticky Header */}
+      <StickyHeader />
+      
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-16 md:py-20">
+      <section className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-16 md:py-20 pt-20">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20" 
+          style={{ backgroundImage: `url(${cybersecurityBg})` }}
+        />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20" 
           style={{ backgroundImage: `url(${cybersecurityBg})` }}
@@ -65,7 +73,7 @@ const Index = () => {
                 Learn to Hack Ethically & Build a 6-Figure Cybersecurity Career 🚀
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 px-2 sm:px-0">
-                3-Hour Live Masterclass by India's Top Bug Bounty Hunter – Learn real-world hacking skills for just ₹99 (instead of ₹999).
+                3-Hour Live Masterclass by India's Top Bug Bounty Hunter – Learn real-world hacking skills for just ₹99 (instead of ₹4999).
               </p>
               <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="lg" className="mb-4 md:mb-6 w-full sm:w-auto text-sm sm:text-base">
@@ -141,10 +149,10 @@ const Index = () => {
             
             <div className="text-center mt-6 md:mt-0">
               <div className="mb-6 md:mb-8">
-                <span className="text-lg sm:text-xl md:text-2xl text-muted-foreground line-through">₹999</span>
+                <span className="text-lg sm:text-xl md:text-2xl text-muted-foreground line-through">₹4999</span>
                 <span className="text-3xl sm:text-4xl md:text-6xl font-bold text-secondary ml-2 sm:ml-4 block sm:inline">₹99</span>
               </div>
-              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4 sm:px-0">Worth ₹999, yours at just ₹99 for a limited time!</p>
+              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4 sm:px-0">Worth ₹4999, yours at just ₹99 for a limited time!</p>
               <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
                 <Button variant="secondary" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                   👉 Book My Seat Now for ₹99
@@ -405,7 +413,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto px-4 sm:px-0">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">Don't Miss Out!</h2>
             <div className="mb-6 md:mb-8">
-              <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground line-through mr-2 sm:mr-4 block sm:inline">Old Price: ₹999</span>
+              <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground line-through mr-2 sm:mr-4 block sm:inline">Old Price: ₹4999</span>
               <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary">Offer Price: ₹99 ✅</span>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-primary mb-6 md:mb-8 cyber-pulse px-2 sm:px-0">
