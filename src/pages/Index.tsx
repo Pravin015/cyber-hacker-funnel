@@ -15,27 +15,27 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center opacity-10" 
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="container mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto relative z-10 px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Hero Content */}
             <div className="text-center lg:text-left">
-              <Badge className="mb-6 bg-secondary text-secondary-foreground cyber-glow-green">
+              <Badge className="mb-4 bg-secondary text-secondary-foreground cyber-glow-green text-xs sm:text-sm">
                 🔥 Limited Time Offer - Only ₹99
               </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-cyber bg-clip-text text-transparent">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 bg-gradient-cyber bg-clip-text text-transparent leading-tight">
                 Learn to Hack Ethically & Build a 6-Figure Cybersecurity Career 🚀
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 px-2 sm:px-0">
                 3-Hour Live Masterclass by India's Top Bug Bounty Hunter – Learn real-world hacking skills for just ₹99 (instead of ₹999).
               </p>
               <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
-                <Button variant="hero" size="xl" className="mb-6">
+                <Button variant="hero" size="lg" className="mb-4 md:mb-6 w-full sm:w-auto text-sm sm:text-base">
                   🔥 Reserve My Spot for ₹99
                 </Button>
               </a>
-              <div className="flex items-center justify-center lg:justify-start gap-4 text-secondary">
-                <CheckCircle className="h-5 w-5" />
-                <span className="font-semibold">Certificate + 3 Job Calls Guaranteed</span>
+              <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-4 text-secondary text-sm sm:text-base">
+                <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <span className="font-semibold text-center lg:text-left">Certificate + 3 Job Calls Guaranteed</span>
               </div>
             </div>
             
@@ -71,19 +71,19 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">
               Introduction to Ethical Hacking & Cybersecurity Careers
             </h2>
-            <div className="flex items-center justify-center gap-4 mb-8">
-              <Clock className="h-6 w-6 text-primary cyber-pulse" />
-              <span className="text-xl">⏳ Limited Time Offer Ends Soon!</span>
+            <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6 md:mb-8 px-4 sm:px-0">
+              <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary cyber-pulse flex-shrink-0" />
+              <span className="text-base sm:text-lg md:text-xl text-center">⏳ Limited Time Offer Ends Soon!</span>
             </div>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <Card className="p-8 border-2 border-primary cyber-glow">
-              <h3 className="text-2xl font-bold mb-6 text-primary">What You'll Learn:</h3>
-              <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center px-4 sm:px-0">
+            <Card className="p-4 sm:p-6 md:p-8 border-2 border-primary cyber-glow">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary">What You'll Learn:</h3>
+              <div className="space-y-3 md:space-y-4">
                 {[
                   "Introduction to Ethical Hacking",
                   "Web App Hacking",
@@ -92,22 +92,22 @@ const Index = () => {
                   "Freelancing in Cybersecurity",
                   "Career & Salary Growth in Cybersecurity"
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-secondary" />
-                    <span className="text-lg">{item}</span>
+                  <div key={index} className="flex items-center gap-2 sm:gap-3">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-secondary flex-shrink-0" />
+                    <span className="text-sm sm:text-base md:text-lg">{item}</span>
                   </div>
                 ))}
               </div>
             </Card>
             
-            <div className="text-center">
-              <div className="mb-8">
-                <span className="text-2xl text-muted-foreground line-through">₹999</span>
-                <span className="text-6xl font-bold text-secondary ml-4">₹99</span>
+            <div className="text-center mt-6 md:mt-0">
+              <div className="mb-6 md:mb-8">
+                <span className="text-lg sm:text-xl md:text-2xl text-muted-foreground line-through">₹999</span>
+                <span className="text-3xl sm:text-4xl md:text-6xl font-bold text-secondary ml-2 sm:ml-4 block sm:inline">₹99</span>
               </div>
-              <p className="text-xl mb-8">Worth ₹999, yours at just ₹99 for a limited time!</p>
+              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4 sm:px-0">Worth ₹999, yours at just ₹99 for a limited time!</p>
               <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
-                <Button variant="secondary" size="xl">
+                <Button variant="secondary" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                   👉 Book My Seat Now for ₹99
                 </Button>
               </a>
@@ -120,19 +120,19 @@ const Index = () => {
       <section className="py-20 px-4 bg-card">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Complete Course Breakdown</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">Complete Course Breakdown</h2>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
               Dive deep into each module and discover what makes this workshop so valuable
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto px-4 sm:px-0">
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="intro-hacking" className="border-2 border-muted rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+              <AccordionItem value="intro-hacking" className="border-2 border-muted rounded-lg px-4 sm:px-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold hover:text-primary">
                   🔐 Introduction to Ethical Hacking
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base md:text-lg space-y-2 sm:space-y-3 pt-4">
                   <p>• Understanding the fundamentals of cybersecurity and ethical hacking</p>
                   <p>• Legal framework and responsible disclosure practices</p>
                   <p>• Setting up your hacking environment and essential tools</p>
@@ -141,11 +141,11 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="web-hacking" className="border-2 border-muted rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+              <AccordionItem value="web-hacking" className="border-2 border-muted rounded-lg px-4 sm:px-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold hover:text-primary">
                   🌐 Web App Hacking
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base md:text-lg space-y-2 sm:space-y-3 pt-4">
                   <p>• OWASP Top 10 vulnerabilities explained</p>
                   <p>• SQL Injection, XSS, and CSRF attacks</p>
                   <p>• Authentication and session management flaws</p>
@@ -154,11 +154,11 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="mobile-hacking" className="border-2 border-muted rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+              <AccordionItem value="mobile-hacking" className="border-2 border-muted rounded-lg px-4 sm:px-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold hover:text-primary">
                   📱 Mobile App Hacking
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base md:text-lg space-y-2 sm:space-y-3 pt-4">
                   <p>• Android and iOS application security testing</p>
                   <p>• Reverse engineering mobile applications</p>
                   <p>• API security testing for mobile backends</p>
@@ -167,11 +167,11 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="social-hacking" className="border-2 border-muted rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+              <AccordionItem value="social-hacking" className="border-2 border-muted rounded-lg px-4 sm:px-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold hover:text-primary">
                   👥 Social Media Hacking
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base md:text-lg space-y-2 sm:space-y-3 pt-4">
                   <p>• Social engineering techniques and psychology</p>
                   <p>• OSINT (Open Source Intelligence) gathering</p>
                   <p>• Social media platform vulnerabilities</p>
@@ -180,11 +180,11 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="freelancing" className="border-2 border-muted rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+              <AccordionItem value="freelancing" className="border-2 border-muted rounded-lg px-4 sm:px-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold hover:text-primary">
                   💰 Freelancing in Cybersecurity
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base md:text-lg space-y-2 sm:space-y-3 pt-4">
                   <p>• Setting up your bug bounty hunting profile</p>
                   <p>• Best platforms: HackerOne, Bugcrowd, Synack</p>
                   <p>• Writing effective vulnerability reports</p>
@@ -193,11 +193,11 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="career-growth" className="border-2 border-muted rounded-lg px-6">
-                <AccordionTrigger className="text-left text-xl font-semibold hover:text-primary">
+              <AccordionItem value="career-growth" className="border-2 border-muted rounded-lg px-4 sm:px-6">
+                <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold hover:text-primary">
                   🚀 Career & Salary Growth in Cybersecurity
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-lg space-y-3 pt-4">
+                <AccordionContent className="text-muted-foreground text-sm sm:text-base md:text-lg space-y-2 sm:space-y-3 pt-4">
                   <p>• Complete career roadmap from beginner to expert</p>
                   <p>• Salary expectations: ₹3L to ₹50L+ progression</p>
                   <p>• Essential certifications: CEH, CISSP, OSCP</p>
@@ -214,43 +214,43 @@ const Index = () => {
       <section className="py-20 px-4 bg-card">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Meet Your Expert Trainer</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">Meet Your Expert Trainer</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto px-4 sm:px-0">
             <div className="text-center">
               <img 
                 src={trainerImage} 
                 alt="Shivam Dwivedi - Ethical Hacker" 
-                className="w-80 h-80 rounded-full mx-auto mb-6 border-4 border-primary cyber-glow object-cover"
+                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full mx-auto mb-4 md:mb-6 border-4 border-primary cyber-glow object-cover"
               />
-              <h3 className="text-3xl font-bold mb-2">Shivam Dwivedi</h3>
-              <p className="text-xl text-primary mb-4">Ethical Hacker & Bug Bounty Expert</p>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Shivam Dwivedi</h3>
+              <p className="text-base sm:text-lg md:text-xl text-primary mb-4">Ethical Hacker & Bug Bounty Expert</p>
             </div>
             
             <div>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Shield className="h-8 w-8 text-secondary mt-1" />
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">Top Companies Hacked</h4>
-                    <p className="text-muted-foreground">Google, Microsoft, Intel, Tesla & more</p>
+                    <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2">Top Companies Hacked</h4>
+                    <p className="text-sm sm:text-base text-muted-foreground">Google, Microsoft, Intel, Tesla & more</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-4">
-                  <Award className="h-8 w-8 text-secondary mt-1" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <Award className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">Experience</h4>
-                    <p className="text-muted-foreground">5+ years of experience in Bug Bounty Hunting</p>
+                    <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2">Experience</h4>
+                    <p className="text-sm sm:text-base text-muted-foreground">5+ years of experience in Bug Bounty Hunting</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-4">
-                  <Users className="h-8 w-8 text-secondary mt-1" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <Users className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">Students Trained</h4>
-                    <p className="text-muted-foreground">Trained 5,000+ students globally</p>
+                    <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2">Students Trained</h4>
+                    <p className="text-sm sm:text-base text-muted-foreground">Trained 5,000+ students globally</p>
                   </div>
                 </div>
               </div>
@@ -271,10 +271,10 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">What You Get</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">What You Get</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-0">
             {[
               {
                 icon: Award,
@@ -297,17 +297,17 @@ const Index = () => {
                 description: "Complete cybersecurity path"
               }
             ].map((benefit, index) => (
-              <Card key={index} className="p-6 text-center border-2 border-muted hover:border-primary transition-cyber cyber-glow">
-                <benefit.icon className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground">{benefit.description}</p>
+              <Card key={index} className="p-4 sm:p-6 text-center border-2 border-muted hover:border-primary transition-cyber cyber-glow">
+                <benefit.icon className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-secondary mx-auto mb-3 sm:mb-4" />
+                <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2">{benefit.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground">{benefit.description}</p>
               </Card>
             ))}
           </div>
           
           <div className="text-center mt-12">
             <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
-              <Button variant="cyberOutline" size="xl">
+              <Button variant="cyberOutline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                 👉 Book My Seat Now for ₹99
               </Button>
             </a>
@@ -319,10 +319,10 @@ const Index = () => {
       <section className="py-20 px-4 bg-card">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">What Students Say</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4 sm:px-0">What Students Say</h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-0">
             {[
               {
                 name: "Rahul Sharma",
@@ -343,16 +343,16 @@ const Index = () => {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <Card key={index} className="p-6 border-2 border-muted">
-                <div className="flex mb-4">
+              <Card key={index} className="p-4 sm:p-6 border-2 border-muted">
+                <div className="flex mb-3 sm:mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-secondary text-xl">⭐</span>
+                    <span key={i} className="text-secondary text-lg sm:text-xl">⭐</span>
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">"{testimonial.text}"</p>
+                <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">"{testimonial.text}"</p>
                 <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-sm sm:text-base font-semibold">{testimonial.name}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </Card>
             ))}
@@ -363,17 +363,17 @@ const Index = () => {
       {/* Urgency & Pricing Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Don't Miss Out!</h2>
-            <div className="mb-8">
-              <span className="text-3xl text-muted-foreground line-through mr-4">Old Price: ₹999</span>
-              <span className="text-6xl font-bold text-secondary">Offer Price: ₹99 ✅</span>
+          <div className="max-w-3xl mx-auto px-4 sm:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">Don't Miss Out!</h2>
+            <div className="mb-6 md:mb-8">
+              <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground line-through mr-2 sm:mr-4 block sm:inline">Old Price: ₹999</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary">Offer Price: ₹99 ✅</span>
             </div>
-            <p className="text-xl text-primary mb-8 cyber-pulse">
+            <p className="text-base sm:text-lg md:text-xl text-primary mb-6 md:mb-8 cyber-pulse px-2 sm:px-0">
               "Offer valid only for first 100 students – Don't miss out!"
             </p>
             <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="xl" className="mb-4">
+              <Button variant="hero" size="lg" className="mb-4 w-full sm:w-auto text-sm sm:text-base">
                 🔥 Join the Workshop for ₹99
               </Button>
             </a>
@@ -384,41 +384,41 @@ const Index = () => {
       {/* Final CTA Section */}
       <section className="py-20 px-4 bg-gradient-cyber-dark">
         <div className="container mx-auto text-center">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Start Your Cybersecurity Journey?</h2>
-            <div className="flex flex-wrap justify-center items-center gap-8 mb-8 text-lg">
+          <div className="max-w-4xl mx-auto px-4 sm:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 px-2 sm:px-0">Ready to Start Your Cybersecurity Journey?</h2>
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 mb-6 md:mb-8 text-sm sm:text-base md:text-lg">
               <div className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-primary" />
+                <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                 <span>3 Hours Duration</span>
               </div>
               <div className="flex items-center gap-2">
-                <Award className="h-5 w-5 text-secondary" />
+                <Award className="h-4 w-4 sm:h-5 sm:w-5 text-secondary flex-shrink-0" />
                 <span>Certificate Included</span>
               </div>
               <div className="flex items-center gap-2">
-                <Target className="h-5 w-5 text-primary" />
+                <Target className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                 <span>3 Job Calls</span>
               </div>
             </div>
             <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="xl" className="text-xl px-16">
+              <Button variant="hero" size="lg" className="text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-12 lg:px-16 w-full sm:w-auto">
                 👉 Yes! I want to become a Cybersecurity Pro 🚀 – Book Now for ₹99
               </Button>
             </a>
             
             {/* Contact Information */}
-            <div className="mt-12 pt-8 border-t border-muted">
-              <p className="text-lg mb-4">Have questions? Get in touch:</p>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-muted">
+              <p className="text-base sm:text-lg mb-4">Have questions? Get in touch:</p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                 <div className="flex items-center gap-2">
-                  <Phone className="h-5 w-5 text-secondary" />
-                  <a href="tel:8087203095" className="text-lg hover:text-primary transition-cyber">
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-secondary flex-shrink-0" />
+                  <a href="tel:8087203095" className="text-base sm:text-lg hover:text-primary transition-cyber">
                     8087203095
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail className="h-5 w-5 text-secondary" />
-                  <a href="mailto:sales@ashpranix.com" className="text-lg hover:text-primary transition-cyber">
+                  <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-secondary flex-shrink-0" />
+                  <a href="mailto:sales@ashpranix.com" className="text-base sm:text-lg hover:text-primary transition-cyber break-all sm:break-normal">
                     sales@ashpranix.com
                   </a>
                 </div>
@@ -429,9 +429,9 @@ const Index = () => {
       </section>
 
       {/* Sticky CTA */}
-      <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
+      <div className="fixed bottom-2 left-2 right-2 z-50 sm:hidden">
         <a href="https://rzp.io/rzp/Y8oreyCw" target="_blank" rel="noopener noreferrer" className="block">
-          <Button variant="hero" className="w-full" size="lg">
+          <Button variant="hero" className="w-full shadow-lg" size="lg">
             🔥 Book Now for ₹99
           </Button>
         </a>
