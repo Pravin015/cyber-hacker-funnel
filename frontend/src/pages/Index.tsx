@@ -20,7 +20,7 @@ import {
   Play,
 } from "lucide-react";
 import heroImage from "@/assets/cyber-hero-bg.jpg";
-import trainerImage from "@/assets/trainer-shivam.jpg";
+import trainerImage from "@/assets/trainer-shivam.png";
 import cybersecurityBg from "@/assets/cybersecurity-bg.jpg";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { StickyHeader } from "@/components/StickyHeader";
@@ -398,11 +398,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto px-4 sm:px-0">
             {/* Trainer Image & Info */}
             <div className="text-center">
-              <img
+             <img
                 src={trainerImage}
                 alt="Portrait of Shivam Dwivedi, Ethical Hacker & Bug Bounty Expert"
                 loading="lazy"
-                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full mx-auto mb-4 md:mb-6 border-4 border-primary cyber-glow object-cover transition-transform duration-300 hover:scale-105"
+                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full mx-auto mb-4 md:mb-6 border-4 border-primary cyber-glow object-contain transition-transform duration-300 hover:scale-105"
               />
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                 Shivam Dwivedi
